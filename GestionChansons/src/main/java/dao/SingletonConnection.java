@@ -8,7 +8,7 @@ public class SingletonConnection {
 private static Connection connection;
 	
 	private SingletonConnection() {
-		
+	
 		try {
 			Class.forName("com.mysql.jdbc.Driver");//chargement du driver
 			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/spotify1","root","");
